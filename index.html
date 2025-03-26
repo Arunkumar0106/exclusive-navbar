@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #111; /* Dark Black */
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo styling */
+        .navbar .logo img {
+            height: 40px;
+        }
+
+        /* Navbar links */
+        .navbar nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        /* Button styling */
+        .navbar .buttons a {
+            color: white;
+            background-color: darkviolet;
+            padding: 8px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .navbar .buttons a:hover {
+            background-color: violet;
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Query for mobile responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 20px;
+            }
+
+            .navbar nav {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+
+            .navbar .buttons {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .navbar .buttons a {
+                width: 48%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="OIP (1).jfif" alt="Temple Logo"> <!-- Add your temple logo here -->
+        </div>
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav>
+
+        <div class="buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Log In</a>
+        </div>
+    </div>
+
+</body>
+</html>
